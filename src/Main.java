@@ -13,6 +13,7 @@ public class Main {
             System.out.println("Ne vomozhno ");
         }
         person1.setName("Ed");
+        person1.setGender(Gender.MALE);
         Person person2 = new Person(16, "Edd","Edson");
         Person person3 = new Person(34, "Eddy", Gender.MALE, "Edson");
         System.out.println("---------TASK 1-----------");
