@@ -43,9 +43,14 @@ public class Person {
     }
 
     public void setName(String name) {
-        if (name.length() > 1) {
+        if ( name !=null && name.length() > 1 ) {
             this.name = name;
-        } else throw new RuntimeException("Name can't be so short");
+        } else throw new RuntimeException("Name can't be so short or empty");
+    }
+    public void setSurName(String surname) {
+        if ( surname !=null && surname.length() > 1 ) {
+            this.surname = surname;
+        } else throw new RuntimeException("Lastname can't be so short or empty");
     }
 
     public void setGender(Gender gender) {
